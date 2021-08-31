@@ -8,19 +8,30 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "test": "jest --forceExit --detectOpenHandles"
+    "lint": "eslint . --max-warnings=10",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:watch": "yarn test --watch",
+    "coverage": "jest --coverage --forceExit --detectOpenHandles",
+    "release": "standard-version",
+    "commit": "cz"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
     "sqlite3": "^5.0.2",
+    "standard-version": "^9.3.1",
     "supertest": "^6.1.6"
   },
   "dependencies": {
@@ -41,14 +52,10 @@
     "strapi-provider-email-sendgrid": "^3.6.8",
     "strapi-utils": "3.6.8"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix"
+    "*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
     ]
   },
   "author": {
@@ -68,7 +75,22 @@
       ".tmp",
       ".cache"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "api/**/*.js",
+      "config/functions/**/*.js",
+      "config/policies/**/*.js",
+      "extensions/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
   },
   "config": {
     "commitizen": {

@@ -1,12 +1,11 @@
 {
-  "parser": "babel-eslint",
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "google"],
   "env": {
-    "es2021": true,
     "commonjs": true,
-    "es6": true,
+    "es2021": true,
     "node": true,
-    "browser": false
+    "browser": false,
+    "jest": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -18,11 +17,17 @@
   "globals": {
     "strapi": true
   },
+  "plugins": ["jest"],
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
-    "no-console": 0,
+    "no-console": "error",
     "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "no-var": "error",
+    "max-len":"off",
+    "eqeqeq": ["error", "always"],
+    "object-curly-spacing": "off",
+    "require-jsdoc": "off"
   }
 }

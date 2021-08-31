@@ -1,4 +1,4 @@
-const Strapi = require('strapi');
+const strapiFunction = require('strapi');
 const http = require('http');
 
 let instance;
@@ -6,7 +6,7 @@ let instance;
 async function setupStrapi() {
   if (!instance) {
     /** the following code in copied from `./node_modules/strapi/lib/Strapi.js` */
-    await Strapi().load();
+    await strapiFunction().load();
     instance = strapi; // strapi is global now
     await instance.app
       .use(instance.router.routes()) // populate KOA routes

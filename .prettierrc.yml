@@ -1,3 +1,4 @@
 trailingComma: "none" # Remover vírugla no fim do objeto
-semi: false # Remover ; ao fim de declaração de variável
+semi: true # Remover ; ao fim de declaração de variável
 singleQuote: true # sempre aspas simples
+printWidth: 70

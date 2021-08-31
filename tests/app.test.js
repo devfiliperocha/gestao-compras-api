@@ -1,28 +1,28 @@
 const fs = require('fs');
 const { setupStrapi } = require('./helpers/strapi');
-const bootstrap = require('../config/functions/bootstrap')
-jest.setTimeout(30000)
+const bootstrap = require('../config/functions/bootstrap');
+jest.setTimeout(30000);
 
 /** this code is called once before any test is called */
 beforeAll(async () => {
   await setupStrapi(); // singleton so it can be called many times
-  strapi.server.listen(0)
+  strapi.server.listen(0);
 
-  await bootstrap()
-
+  await bootstrap();
+  return;
 });
 
 /** this code is called once before all the tested are finished */
 afterAll(async () => {
   const dbSettings = strapi.config.get('database.connections.default.settings');
   if (strapi.server) {
-    await strapi.server.close()
+    await strapi.server.close();
   }
 
-  //close server to release the db-file
+  // close server to release the db-file
   await strapi.destroy();
 
-  //delete test database after all tests
+  // delete test database after all tests
   if (dbSettings && dbSettings.filename) {
     const tmpDbFile = `${__dirname}/../${dbSettings.filename}`;
     if (fs.existsSync(tmpDbFile)) {

@@ -11,48 +11,48 @@
  */
 
 module.exports = async () => {
-  //Verifica se a regra fornecedores existe
+  // Verifica se a regra fornecedores existe
   const pluginStore = await strapi.store({
     environment: '',
     type: 'plugin',
     name: 'users-permissions',
   });
 
-  let role = await strapi
+  const role = await strapi
     .query('role', 'users-permissions')
-    .findOne({ type: "fornecedores" }, []);
+    .findOne({ type: 'fornecedores' }, []);
 
-  //Caso não exista, cria todas as regras e configura fornecedores como default
+  // Caso não exista, cria todas as regras e configura fornecedores como default
   if (!role) {
     await strapi
       .query('role', 'users-permissions')
       .create({
-        name: "Fornecedores",
-        description: "Permissões de fornecedores cadastrados.",
-        type: "fornecedores"
+        name: 'Fornecedores',
+        description: 'Permissões de fornecedores cadastrados.',
+        type: 'fornecedores',
       }, []);
     await pluginStore.set({
       key: 'advanced',
-      value: { "unique_email": true, "allow_register": true, "email_confirmation": false, "email_reset_password": null, "email_confirmation_redirection": null, "default_role": "fornecedores" }
+      value: { 'unique_email': true, 'allow_register': true, 'email_confirmation': false, 'email_reset_password': null, 'email_confirmation_redirection': null, 'default_role': 'fornecedores' },
     });
     await strapi
       .query('role', 'users-permissions')
       .create({
-        name: "Secretários",
-        description: "Permissões de Secretários cadastrados.",
-        type: "secretarios"
+        name: 'Secretários',
+        description: 'Permissões de Secretários cadastrados.',
+        type: 'secretarios',
       }, []);
     await strapi
       .query('role', 'users-permissions')
       .create({
-        name: "CPL",
-        description: "Permissões de CPL.",
-        type: "cpl"
+        name: 'CPL',
+        description: 'Permissões de CPL.',
+        type: 'cpl',
       }, []);
   } else {
     await pluginStore.set({
       key: 'advanced',
-      value: { "unique_email": true, "allow_register": true, "email_confirmation": false, "email_reset_password": null, "email_confirmation_redirection": null, "default_role": "fornecedores" }
+      value: { 'unique_email': true, 'allow_register': true, 'email_confirmation': false, 'email_reset_password': null, 'email_confirmation_redirection': null, 'default_role': 'fornecedores' },
     });
   }
 };

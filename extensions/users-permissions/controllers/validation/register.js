@@ -1,21 +1,21 @@
 const validateFornecedores = (data, role) => {
-  //[SPECIFIC]: Fornecedores não podem ser adicionados com seus parâmetros vazios
-  let result = {
+  // [SPECIFIC]: Fornecedores não podem ser adicionados com seus parâmetros vazios
+  const result = {
     sucess: true,
+  };
+  if (role.type === 'fornecedores' && !data.detalhes_fornecedor) {
+    result.sucess = false;
+    result.error = 'Parâmetros inválidos';
   }
-  if (role.type == "fornecedores" && !data.detalhes_fornecedor) {
-    result.sucess = false
-    result.error = "Parâmetros inválidos"
-  }
-  return result
-}
+  return result;
+};
 
 module.exports = (data, role) => {
   let result = {
     sucess: true,
-  }
+  };
 
-  result = validateFornecedores(data, role)
+  result = validateFornecedores(data, role);
 
-  return result
-}
+  return result;
+};
