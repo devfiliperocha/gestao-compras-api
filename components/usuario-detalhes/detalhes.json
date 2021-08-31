@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_usuario_detalhes_detalhes",
+  "info": {
+    "name": "detalhes",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "matricula": {
+      "type": "string"
+    },
+    "cargos_funcao": {
+      "type": "string"
+    }
+  }
+}
