@@ -58,16 +58,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "detalhes_servidor": {
-      "type": "component",
-      "repeatable": false,
-      "component": "detalhes.detalhes-servidor"
-    },
-    "detalhes_fornecedor": {
-      "type": "component",
-      "repeatable": false,
-      "component": "detalhes.detalhes-fornecedor"
     }
   }
 }

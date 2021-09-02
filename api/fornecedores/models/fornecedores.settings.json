@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fornecedores",
+  "info": {
+    "name": "Fornecedores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "razao_social": {
+      "type": "string",
+      "required": true
+    },
+    "nome_fantasia": {
+      "type": "string",
+      "required": true
+    },
+    "cnpj": {
+      "type": "string",
+      "required": true
+    },
+    "endereco": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "responsavel": {
+      "type": "string",
+      "required": true
+    },
+    "cpf_responsavel": {
+      "type": "string",
+      "required": true
+    },
+    "comprovante_cnpj": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    },
+    "certidao_federal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    },
+    "certidao_estadual": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    },
+    "certidao_municipal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    },
+    "certidao_fgts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    },
+    "certidao_trabalhista": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documentos.documentos-fornecedor",
+      "required": true
+    }
+  }
+}

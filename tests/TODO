@@ -1,0 +1,38 @@
+ * Achar modo de linkar usuário registrado na role fornecedor a um registro da modal Fornecedores
+
+
+ * Permitir adicionar usuários de outras roles apenas através do ADMIN
+ * login => success: retorna o token e as permissoes
+ *
+ * **** Visão órgão ****
+ * listar órgãos => [GET]  (auth/acl) => array com órgãos
+ * criar órgão => [POST]  (auth/acl)
+ * editar órgão => [PUT]  (auth/acl)
+ * excluir órgão => [DELETE]  (auth/acl)
+ * fornecedores => [GET] (auth/acl) => array com fornecedores por status
+ * visualizar solicitação do fornecedor => [GET] (auth/acl) => Mostra dados de cadastro de um fornecedor por ID
+ * aprovar/rejeitar documento fornecedor => [POST] (auth/acl) => Muda o status de um documento do fornecedor por ID; Gera notificação para o fornecedor
+ * - Ao Aprovar todos os documentos, Aprovar cadastro tbm;
+ * - Ao rejeitar todos os documentos, Rejeitar cadastro tbm;
+ * aprovar/rejeitar cadastro fornecedor => [POST] (auth/acl) => Muda o status do fornecedor por ID; Gera notificação para o fornecedor
+ * visualizar declaração [GET] (auth/acl) => retorna o link do PDF da declaração do fornecedor, e a validade
+ * produtos [GET] (auth/acl) => retorna lista de produtos cadastrados
+ * grupo de produtos [GET] (auth/acl) => retorna produtos cadastrados agrupados por categoria
+ * criar produto => [POST]  (auth/acl)
+ * criar/editar grupo de produto => [POST]  (auth/acl) Recebe uma categoria e um array de produtos, e altera a propriedade CATEGORIA de todos eles para a recebida
+ * editar produto => [PUT]  (auth/acl)
+ * excluir produto => [DELETE]  (auth/acl)
+ * listar termos => [GET]  (auth/acl) => array com termos cadastrados
+ * criar termo => [POST]  (auth/acl) => Bloquear
+ * Aprovar termo => [POST]  (auth/acl) => Publica um termo e gera uma cotação; Gera notificação para o fornecedores com cnaes compatíveis
+ * editar termo => [PUT]  (auth/acl) => Bloquear
+ * excluir termo => [DELETE]  (auth/acl) => Não permitir caso já tenha sido publicado
+ * listar cotações => [GET]  (auth/acl) => array com cotações geradas
+ * criar cotação => [POST]  (auth/acl) => Bloquear
+ * editar cotação => [PUT]  (auth/acl) => Bloquear
+ * excluir cotação => [DELETE]  (auth/acl) => Não permitir caso já tenha recebido propostas
+ * listar Propostas => [GET]  (auth/acl) => array com propostas de determinada cotação
+ * criar Propostas => [POST]  (auth/acl) => Bloquear
+ * Aprovar/Rejeitar Propostas => [POST]  (auth/acl) => Aprovar/Rejeitar Propostas enviadas para determinada cotação. Gera gera notificação para fornecedor (Futuro: Gera contrato/Ordem)
+ * editar Propostas => [PUT]  (auth/acl) => Bloquear
+ * excluir Propostas => [DELETE]  (auth/acl) => Não permitir caso já tenha recebido propostas

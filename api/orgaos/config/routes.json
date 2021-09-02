@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/orgaos",
+      "handler": "orgaos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orgaos/count",
+      "handler": "orgaos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orgaos/:id",
+      "handler": "orgaos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orgaos",
+      "handler": "orgaos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/orgaos/:id",
+      "handler": "orgaos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/orgaos/:id",
+      "handler": "orgaos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_documentos_documentos",
+  "info": {
+    "name": "Documento",
+    "icon": "file-pdf",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "arquivo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "validade": {
+      "type": "date"
+    }
+  }
+}

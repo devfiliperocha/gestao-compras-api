@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fornecedores",
+      "handler": "fornecedores.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fornecedores/count",
+      "handler": "fornecedores.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fornecedores/:id",
+      "handler": "fornecedores.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fornecedores",
+      "handler": "fornecedores.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fornecedores/:id",
+      "handler": "fornecedores.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fornecedores/:id",
+      "handler": "fornecedores.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

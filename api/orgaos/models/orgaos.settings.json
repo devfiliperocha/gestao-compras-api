@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orgaos",
+  "info": {
+    "name": "Órgãos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "cnpj": {
+      "type": "string",
+      "required": true
+    },
+    "autonomia": {
+      "type": "enumeration",
+      "enum": [
+        "secretaria",
+        "autarquia"
+      ]
+    },
+    "endereco": {
+      "type": "component",
+      "repeatable": false,
+      "component": "endereco.endereco"
+    }
+  }
+}

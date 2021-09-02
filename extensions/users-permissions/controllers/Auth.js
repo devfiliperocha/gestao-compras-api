@@ -134,17 +134,17 @@ module.exports = {
           model: strapi.query('user', 'users-permissions').model,
         });
 
-        const userMetaCollection = await strapi.query('usuarios-meta-collection').findOne({
-          role: userResult.role.type,
-        });
+        // const userMetaCollection = await strapi.query('usuarios-meta-collection').findOne({
+        //   role: userResult.role.type,
+        // });
 
-        const userMetaInfo = await strapi.query(userMetaCollection.collectionname).findOne({
-          user: user.id,
-        });
+        // const userMetaInfo = await strapi.query(userMetaCollection.collectionname).findOne({
+        //   user: user.id,
+        // });
 
-        userResult.metaInfo = {
-          ..._.omit(userMetaInfo, ['id', 'created_by', 'updated_by', 'created_at', 'updated_at', 'user']),
-        };
+        // userResult.metaInfo = {
+        //   ..._.omit(userMetaInfo, ['id', 'created_by', 'updated_by', 'created_at', 'updated_at', 'user']),
+        // };
 
         ctx.send({
           jwt: strapi.plugins['users-permissions'].services.jwt.issue({
