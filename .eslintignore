@@ -1,10 +1,12 @@
 .cache
 build
 **/node_modules/**
-
+**/*.json
+**/*.html
 package.json
 yarn.lock
 .eslintrc
 .eslintignore
 .prettierignore
 .prettierrc.yml
+TODO

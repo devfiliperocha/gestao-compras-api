@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "lint": "eslint . --max-warnings=10",
+    "lint": "eslint . --max-warnings=100",
     "test": "jest --forceExit --detectOpenHandles",
     "test:watch": "yarn test --watch",
     "coverage": "jest --coverage --forceExit --detectOpenHandles",
