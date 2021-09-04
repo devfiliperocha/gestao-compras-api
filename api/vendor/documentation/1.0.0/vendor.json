@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/fornecedores": {
+    "/vendor": {
       "get": {
         "deprecated": false,
-        "description": "Find all the fornecedores's records",
+        "description": "Find all the vendor's records",
         "responses": {
           "200": {
-            "description": "Retrieve fornecedores document(s)",
+            "description": "Retrieve vendor document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Fornecedores"
+                    "$ref": "#/components/schemas/Vendor"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new fornecedores record",
+        "description": "Create a new vendor record",
         "responses": {
           "200": {
-            "description": "Retrieve fornecedores document(s)",
+            "description": "Retrieve vendor document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Fornecedores"
+                  "$ref": "#/components/schemas/Vendor"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFornecedores"
+                "$ref": "#/components/schemas/NewVendor"
               }
             }
           }
         }
       }
     },
-    "/fornecedores/count": {
+    "/vendor/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of fornecedores documents",
+        "description": "Retrieve the number of vendor documents",
         "responses": {
           "200": {
-            "description": "Retrieve fornecedores document(s)",
+            "description": "Retrieve vendor document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "parameters": []
       }
     },
-    "/fornecedores/{id}": {
+    "/vendor/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one fornecedores record",
+        "description": "Find one vendor record",
         "responses": {
           "200": {
-            "description": "Retrieve fornecedores document(s)",
+            "description": "Retrieve vendor document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Fornecedores"
+                  "$ref": "#/components/schemas/Vendor"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single fornecedores record",
+        "description": "Update a single vendor record",
         "responses": {
           "200": {
-            "description": "Retrieve fornecedores document(s)",
+            "description": "Retrieve vendor document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Fornecedores"
+                  "$ref": "#/components/schemas/Vendor"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFornecedores"
+                "$ref": "#/components/schemas/NewVendor"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single fornecedores record",
+        "description": "Delete a single vendor record",
         "responses": {
           "200": {
-            "description": "deletes a single fornecedores based on the ID supplied",
+            "description": "deletes a single vendor based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Fornecedores"
+          "Vendor"
         ],
         "parameters": [
           {
@@ -510,65 +510,136 @@
           }
         ]
       }
+    },
+    "/vendor/register": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new vendor record",
+        "responses": {
+          "200": {
+            "description": "Retrieve vendor document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Vendor"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "Fornecedores": {
+      "Vendor": {
         "required": [
           "id",
-          "razao_social",
-          "nome_fantasia",
-          "cnpj",
-          "endereco",
-          "responsavel",
-          "cpf_responsavel",
-          "comprovante_cnpj",
-          "certidao_federal",
-          "certidao_estadual",
-          "certidao_municipal",
-          "certidao_fgts",
-          "certidao_trabalhista"
+          "corporateName",
+          "fantasyName",
+          "corporateDocNumber",
+          "address",
+          "responsible",
+          "responsibleDocNumber",
+          "corporateDocPdf",
+          "federalCertificatePdf",
+          "municipalCertificatePdf",
+          "stateCertificatePdf",
+          "fgtsCertificatePdf",
+          "laborCertificatePdf"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "razao_social": {
+          "corporateName": {
             "type": "string"
           },
-          "nome_fantasia": {
+          "fantasyName": {
             "type": "string"
           },
-          "cnpj": {
+          "corporateDocNumber": {
             "type": "string"
           },
-          "endereco": {
+          "address": {
             "type": "string"
           },
           "email": {
             "type": "string"
           },
-          "telefone": {
+          "phone": {
             "type": "string"
           },
-          "responsavel": {
+          "responsible": {
             "type": "string"
           },
-          "cpf_responsavel": {
+          "responsibleDocNumber": {
             "type": "string"
           },
-          "comprovante_cnpj": {
+          "corporateDocPdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -635,23 +706,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_federal": {
+          "federalCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -718,23 +789,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_estadual": {
+          "municipalCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -801,23 +872,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_municipal": {
+          "stateCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -884,23 +955,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_fgts": {
+          "fgtsCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -967,23 +1038,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_trabalhista": {
+          "laborCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1050,7 +1121,7 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
@@ -1058,57 +1129,60 @@
           }
         }
       },
-      "NewFornecedores": {
+      "NewVendor": {
         "required": [
-          "razao_social",
-          "nome_fantasia",
-          "cnpj",
-          "endereco",
-          "responsavel",
-          "cpf_responsavel",
-          "comprovante_cnpj",
-          "certidao_federal",
-          "certidao_estadual",
-          "certidao_municipal",
-          "certidao_fgts",
-          "certidao_trabalhista"
+          "corporateName",
+          "fantasyName",
+          "corporateDocNumber",
+          "address",
+          "responsible",
+          "responsibleDocNumber",
+          "corporateDocPdf",
+          "federalCertificatePdf",
+          "municipalCertificatePdf",
+          "stateCertificatePdf",
+          "fgtsCertificatePdf",
+          "laborCertificatePdf"
         ],
         "properties": {
-          "razao_social": {
+          "corporateName": {
             "type": "string"
           },
-          "nome_fantasia": {
+          "fantasyName": {
             "type": "string"
           },
-          "cnpj": {
+          "corporateDocNumber": {
             "type": "string"
           },
-          "endereco": {
+          "address": {
             "type": "string"
           },
           "email": {
             "type": "string"
           },
-          "telefone": {
+          "phone": {
             "type": "string"
           },
-          "responsavel": {
+          "responsible": {
             "type": "string"
           },
-          "cpf_responsavel": {
+          "responsibleDocNumber": {
             "type": "string"
           },
-          "comprovante_cnpj": {
+          "user": {
+            "type": "string"
+          },
+          "corporateDocPdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1175,23 +1249,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_federal": {
+          "federalCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1258,23 +1332,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_estadual": {
+          "municipalCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1341,23 +1415,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_municipal": {
+          "stateCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1424,23 +1498,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_fgts": {
+          "fgtsCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1507,23 +1581,23 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
             }
           },
-          "certidao_trabalhista": {
+          "laborCertificatePdf": {
             "type": "object",
             "required": [
               "id",
-              "arquivo"
+              "file"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "arquivo": {
+              "file": {
                 "required": [
                   "id",
                   "name",
@@ -1590,7 +1664,7 @@
                   }
                 }
               },
-              "validade": {
+              "expirationDate": {
                 "type": "string",
                 "format": "date"
               }
@@ -1608,7 +1682,7 @@
   },
   "tags": [
     {
-      "name": "Fornecedores"
+      "name": "Vendor"
     }
   ]
 }

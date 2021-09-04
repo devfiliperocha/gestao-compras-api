@@ -1,13 +1,13 @@
 {
-  "collectionName": "components_documentos_documentos",
+  "collectionName": "components_documents_default",
   "info": {
-    "name": "Documento",
+    "name": "Padrão",
     "icon": "file-pdf",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "arquivo": {
+    "file": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -17,7 +17,7 @@
       "required": true,
       "pluginOptions": {}
     },
-    "validade": {
+    "expirationDate": {
       "type": "date"
     }
   }

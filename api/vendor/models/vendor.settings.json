@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "fornecedores",
+  "collectionName": "vendor",
   "info": {
     "name": "Fornecedores",
     "description": ""
@@ -12,70 +12,76 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "razao_social": {
+    "corporateName": {
       "type": "string",
       "required": true
     },
-    "nome_fantasia": {
+    "fantasyName": {
       "type": "string",
       "required": true
     },
-    "cnpj": {
+    "corporateDocNumber": {
       "type": "string",
       "required": true
     },
-    "endereco": {
+    "address": {
       "type": "string",
       "required": true
     },
     "email": {
       "type": "string"
     },
-    "telefone": {
+    "phone": {
       "type": "string"
     },
-    "responsavel": {
+    "responsible": {
       "type": "string",
       "required": true
     },
-    "cpf_responsavel": {
+    "responsibleDocNumber": {
       "type": "string",
       "required": true
     },
-    "comprovante_cnpj": {
+    "user": {
+      "unique": true,
+      "private": true,
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "corporateDocPdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     },
-    "certidao_federal": {
+    "federalCertificatePdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     },
-    "certidao_estadual": {
+    "municipalCertificatePdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     },
-    "certidao_municipal": {
+    "stateCertificatePdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     },
-    "certidao_fgts": {
+    "fgtsCertificatePdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     },
-    "certidao_trabalhista": {
+    "laborCertificatePdf": {
       "type": "component",
       "repeatable": false,
-      "component": "documentos.documentos-fornecedor",
+      "component": "documents.default",
       "required": true
     }
   }

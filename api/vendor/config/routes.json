@@ -2,48 +2,56 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/orgaos",
-      "handler": "orgaos.find",
+      "path": "/vendor",
+      "handler": "vendor.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/orgaos/count",
-      "handler": "orgaos.count",
+      "path": "/vendor/count",
+      "handler": "vendor.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/orgaos/:id",
-      "handler": "orgaos.findOne",
+      "path": "/vendor/:id",
+      "handler": "vendor.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/orgaos",
-      "handler": "orgaos.create",
+      "path": "/vendor",
+      "handler": "vendor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vendor/register",
+      "handler": "vendor.register",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/orgaos/:id",
-      "handler": "orgaos.update",
+      "path": "/vendor/:id",
+      "handler": "vendor.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/orgaos/:id",
-      "handler": "orgaos.delete",
+      "path": "/vendor/:id",
+      "handler": "vendor.delete",
       "config": {
         "policies": []
       }

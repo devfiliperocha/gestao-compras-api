@@ -35,5 +35,5 @@ it('strapi is defined', () => {
   expect(strapi).toBeDefined();
 });
 
-// require('./api/auth/register');
+require('./api/auth/');
 // require('./api/auth/login');

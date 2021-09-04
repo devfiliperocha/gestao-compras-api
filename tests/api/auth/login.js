@@ -55,7 +55,7 @@ it('should login on RestAPI as Vendor with Email and Password', async () => {
 });
 
 it('should return users data for Vendor user', async () => {
-  const vendorRole = await strapi.query('role', 'users-permissions').findOne({type: 'fornecedores'}, []);
+  const vendorRole = await strapi.query('role', 'users-permissions').findOne({type: 'vendor'}, []);
   const role = vendorRole ? vendorRole.id : null;
 
   /** Creates a new user an push to database */

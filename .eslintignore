@@ -3,6 +3,7 @@ build
 **/node_modules/**
 **/*.json
 **/*.html
+**/*.md
 package.json
 yarn.lock
 .eslintrc
@@ -10,3 +11,4 @@ yarn.lock
 .prettierignore
 .prettierrc.yml
 TODO
+

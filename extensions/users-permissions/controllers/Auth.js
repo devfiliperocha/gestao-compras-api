@@ -11,7 +11,6 @@ const crypto = require('crypto');
 const _ = require('lodash');
 const grant = require('grant-koa');
 const { sanitizeEntity } = require('strapi-utils');
-const validateRegistration = require('./validation/register');
 
 const emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const formatError = (error) => [
@@ -468,18 +467,6 @@ module.exports = {
     const role = await strapi
       .query('role', 'users-permissions')
       .findOne({ type: settings.default_role }, []);
-
-    // REGISTER VALIDATION
-    const isValidRegistration = validateRegistration(params, role);
-    if (!isValidRegistration) {
-      return ctx.badRequest(
-        null,
-        formatError({
-          id: 'Auth.form.error.role.error',
-          message: isValidRegistration.error,
-        }),
-      );
-    }
 
 
     // Check if the provided email is valid or not.
