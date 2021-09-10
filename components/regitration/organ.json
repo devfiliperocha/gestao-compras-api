@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_regitration_organ",
+  "info": {
+    "name": "Órgão",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "organ": {
+      "collection": "organ"
+    }
+  }
+}

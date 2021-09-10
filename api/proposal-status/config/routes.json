@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proposal-status",
+      "handler": "proposal-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proposal-status/count",
+      "handler": "proposal-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proposal-status/:id",
+      "handler": "proposal-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proposal-status",
+      "handler": "proposal-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proposal-status/:id",
+      "handler": "proposal-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proposal-status/:id",
+      "handler": "proposal-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

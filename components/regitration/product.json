@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_regitration_product",
+  "info": {
+    "name": "Produto",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "collection": "product"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proposal_status",
+  "info": {
+    "name": "Propostas Status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "proposal": {
+      "model": "proposal",
+      "via": "status"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

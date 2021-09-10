@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proposal",
+  "info": {
+    "name": "Propostas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cotacao": {
+      "model": "quotation",
+      "via": "proposal"
+    },
+    "vendor": {
+      "model": "vendor"
+    },
+    "total": {
+      "type": "decimal",
+      "required": true
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "status": {
+      "via": "proposal",
+      "model": "proposal-status"
+    }
+  }
+}

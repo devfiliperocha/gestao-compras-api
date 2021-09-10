@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reference_term",
+  "info": {
+    "name": "Termo de Referência",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Published",
+        "Pending",
+        "Canceled"
+      ],
+      "required": true,
+      "default": "Pending"
+    },
+    "organ": {
+      "type": "component",
+      "repeatable": true,
+      "component": "regitration.organ"
+    },
+    "product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "regitration.product"
+    }
+  }
+}

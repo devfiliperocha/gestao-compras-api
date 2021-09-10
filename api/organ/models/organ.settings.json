@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organ",
+  "info": {
+    "name": "Órgaos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "corporateDocNumber": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.address",
+      "required": true
+    },
+    "secretariat": {
+      "type": "boolean",
+      "required": true
+    },
+    "autarchy": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

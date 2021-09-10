@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reference-term",
+      "handler": "reference-term.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reference-term/count",
+      "handler": "reference-term.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reference-term/:id",
+      "handler": "reference-term.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reference-term",
+      "handler": "reference-term.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reference-term/:id",
+      "handler": "reference-term.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reference-term/:id",
+      "handler": "reference-term.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

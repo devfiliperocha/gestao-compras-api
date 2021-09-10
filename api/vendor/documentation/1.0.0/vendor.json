@@ -591,7 +591,6 @@
           "corporateName",
           "fantasyName",
           "corporateDocNumber",
-          "address",
           "responsible",
           "responsibleDocNumber",
           "corporateDocPdf",
@@ -612,9 +611,6 @@
             "type": "string"
           },
           "corporateDocNumber": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "email": {
@@ -1126,6 +1122,38 @@
                 "format": "date"
               }
             }
+          },
+          "address": {
+            "type": "object",
+            "required": [
+              "id",
+              "address",
+              "number"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string",
+                "default": "S/N"
+              },
+              "CEP": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1134,7 +1162,6 @@
           "corporateName",
           "fantasyName",
           "corporateDocNumber",
-          "address",
           "responsible",
           "responsibleDocNumber",
           "corporateDocPdf",
@@ -1152,9 +1179,6 @@
             "type": "string"
           },
           "corporateDocNumber": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "email": {
@@ -1667,6 +1691,38 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              }
+            }
+          },
+          "address": {
+            "type": "object",
+            "required": [
+              "id",
+              "address",
+              "number"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string",
+                "default": "S/N"
+              },
+              "CEP": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
               }
             }
           },

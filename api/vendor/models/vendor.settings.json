@@ -24,10 +24,6 @@
       "type": "string",
       "required": true
     },
-    "address": {
-      "type": "string",
-      "required": true
-    },
     "email": {
       "type": "string"
     },
@@ -83,6 +79,12 @@
       "repeatable": false,
       "component": "documents.default",
       "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.address",
+      "required": false
     }
   }
 }

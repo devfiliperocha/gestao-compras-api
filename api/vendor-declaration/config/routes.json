@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vendor-declaration",
+      "handler": "vendor-declaration.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-declaration/count",
+      "handler": "vendor-declaration.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vendor-declaration/:id",
+      "handler": "vendor-declaration.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vendor-declaration",
+      "handler": "vendor-declaration.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vendor-declaration/:id",
+      "handler": "vendor-declaration.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vendor-declaration/:id",
+      "handler": "vendor-declaration.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

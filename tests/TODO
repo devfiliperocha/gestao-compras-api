@@ -1,4 +1,4 @@
- * Achar modo de linkar usuário registrado na role fornecedor a um registro da modal Fornecedores
+ * Achar modo de linkar usuário registrado na role vendor a um registro da modal Fornecedores
 
 
  * Permitir adicionar usuários de outras roles apenas através do ADMIN
@@ -10,12 +10,12 @@
  * editar órgão => [PUT]  (auth/acl)
  * excluir órgão => [DELETE]  (auth/acl)
  * fornecedores => [GET] (auth/acl) => array com fornecedores por status
- * visualizar solicitação do fornecedor => [GET] (auth/acl) => Mostra dados de cadastro de um fornecedor por ID
- * aprovar/rejeitar documento fornecedor => [POST] (auth/acl) => Muda o status de um documento do fornecedor por ID; Gera notificação para o fornecedor
+ * visualizar solicitação do vendor => [GET] (auth/acl) => Mostra dados de cadastro de um vendor por ID
+ * aprovar/rejeitar documento vendor => [POST] (auth/acl) => Muda o status de um documento do vendor por ID; Gera notificação para o vendor
  * - Ao Aprovar todos os documentos, Aprovar cadastro tbm;
  * - Ao rejeitar todos os documentos, Rejeitar cadastro tbm;
- * aprovar/rejeitar cadastro fornecedor => [POST] (auth/acl) => Muda o status do fornecedor por ID; Gera notificação para o fornecedor
- * visualizar declaração [GET] (auth/acl) => retorna o link do PDF da declaração do fornecedor, e a validade
+ * aprovar/rejeitar cadastro vendor => [POST] (auth/acl) => Muda o status do vendor por ID; Gera notificação para o vendor
+ * visualizar declaração [GET] (auth/acl) => retorna o link do PDF da declaração do vendor, e a validade
  * produtos [GET] (auth/acl) => retorna lista de produtos cadastrados
  * grupo de produtos [GET] (auth/acl) => retorna produtos cadastrados agrupados por categoria
  * criar produto => [POST]  (auth/acl)
@@ -33,6 +33,6 @@
  * excluir cotação => [DELETE]  (auth/acl) => Não permitir caso já tenha recebido propostas
  * listar Propostas => [GET]  (auth/acl) => array com propostas de determinada cotação
  * criar Propostas => [POST]  (auth/acl) => Bloquear
- * Aprovar/Rejeitar Propostas => [POST]  (auth/acl) => Aprovar/Rejeitar Propostas enviadas para determinada cotação. Gera gera notificação para fornecedor (Futuro: Gera contrato/Ordem)
+ * Aprovar/Rejeitar Propostas => [POST]  (auth/acl) => Aprovar/Rejeitar Propostas enviadas para determinada cotação. Gera gera notificação para vendor (Futuro: Gera contrato/Ordem)
  * editar Propostas => [PUT]  (auth/acl) => Bloquear
  * excluir Propostas => [DELETE]  (auth/acl) => Não permitir caso já tenha recebido propostas

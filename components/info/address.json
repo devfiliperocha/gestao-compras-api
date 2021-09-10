@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_info_addresses",
+  "info": {
+    "name": "address",
+    "icon": "map-pin"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true,
+      "default": "S/N"
+    },
+    "CEP": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

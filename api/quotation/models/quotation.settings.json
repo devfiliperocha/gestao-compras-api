@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotation",
+  "info": {
+    "name": "Cotações"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "objeto": {
+      "type": "text",
+      "required": true
+    },
+    "expirationDate": {
+      "type": "date",
+      "required": true
+    },
+    "reference_term": {
+      "model": "reference-term"
+    },
+    "proposal": {
+      "via": "cotacao",
+      "collection": "proposal"
+    }
+  }
+}

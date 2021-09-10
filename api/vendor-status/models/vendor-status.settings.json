@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendor_status",
+  "info": {
+    "name": "Fornecedores Status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

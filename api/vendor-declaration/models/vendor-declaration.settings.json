@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendor_declaration",
+  "info": {
+    "name": "Fornecedores Declarações",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "expirationDate": {
+      "type": "date",
+      "required": true
+    },
+    "vendor": {
+      "model": "vendor"
+    }
+  }
+}
