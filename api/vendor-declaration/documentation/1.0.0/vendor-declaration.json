@@ -672,6 +672,12 @@
               "address": {
                 "type": "component"
               },
+              "declaration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },

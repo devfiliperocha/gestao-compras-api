@@ -537,6 +537,84 @@
           },
           "status": {
             "type": "boolean"
+          },
+          "vendor": {
+            "required": [
+              "id",
+              "corporateName",
+              "fantasyName",
+              "corporateDocNumber",
+              "responsible",
+              "responsibleDocNumber",
+              "corporateDocPdf",
+              "federalCertificatePdf",
+              "municipalCertificatePdf",
+              "stateCertificatePdf",
+              "fgtsCertificatePdf",
+              "laborCertificatePdf"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corporateName": {
+                "type": "string"
+              },
+              "fantasyName": {
+                "type": "string"
+              },
+              "corporateDocNumber": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "responsible": {
+                "type": "string"
+              },
+              "responsibleDocNumber": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "corporateDocPdf": {
+                "type": "component"
+              },
+              "federalCertificatePdf": {
+                "type": "component"
+              },
+              "municipalCertificatePdf": {
+                "type": "component"
+              },
+              "stateCertificatePdf": {
+                "type": "component"
+              },
+              "fgtsCertificatePdf": {
+                "type": "component"
+              },
+              "laborCertificatePdf": {
+                "type": "component"
+              },
+              "address": {
+                "type": "component"
+              },
+              "declaration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -544,6 +622,9 @@
         "properties": {
           "status": {
             "type": "boolean"
+          },
+          "vendor": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

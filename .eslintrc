@@ -1,23 +1,25 @@
 {
-  "extends": ["eslint:recommended", "google"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "google"],
   "env": {
+    "es6": true,
     "commonjs": true,
-    "es2021": true,
     "node": true,
-    "browser": false,
+    "browser": true,
     "jest": true
   },
   "parserOptions": {
+    "ecmaVersion": 2021,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
-      "jsx": false
+      "modules": true,
+      "jsx": true
     },
     "sourceType": "module"
   },
   "globals": {
     "strapi": true
   },
-  "plugins": ["jest"],
+  "plugins": ["jest", "react"],
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
@@ -29,5 +31,11 @@
     "eqeqeq": ["error", "always"],
     "object-curly-spacing": "off",
     "require-jsdoc": "off"
+  },
+  "settings": {
+      "react": {
+          "pragma": "React",
+          "version": "15.6.1"
+      }
   }
 }

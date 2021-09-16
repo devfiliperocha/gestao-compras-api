@@ -1154,6 +1154,55 @@
                 "type": "string"
               }
             }
+          },
+          "declaration": {
+            "required": [
+              "id",
+              "file",
+              "expirationDate"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              },
+              "expirationDate": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "status": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "status": {
+                "type": "boolean"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1725,6 +1774,12 @@
                 "type": "string"
               }
             }
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

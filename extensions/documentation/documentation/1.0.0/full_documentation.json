@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/10/2021 12:34:12 AM"
+    "x-generation-date": "09/15/2021 9:22:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7333,6 +7333,12 @@
               "address": {
                 "type": "component"
               },
+              "declaration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -7973,6 +7979,12 @@
               "address": {
                 "type": "component"
               },
+              "declaration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -8013,6 +8025,84 @@
           },
           "status": {
             "type": "boolean"
+          },
+          "vendor": {
+            "required": [
+              "id",
+              "corporateName",
+              "fantasyName",
+              "corporateDocNumber",
+              "responsible",
+              "responsibleDocNumber",
+              "corporateDocPdf",
+              "federalCertificatePdf",
+              "municipalCertificatePdf",
+              "stateCertificatePdf",
+              "fgtsCertificatePdf",
+              "laborCertificatePdf"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corporateName": {
+                "type": "string"
+              },
+              "fantasyName": {
+                "type": "string"
+              },
+              "corporateDocNumber": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "responsible": {
+                "type": "string"
+              },
+              "responsibleDocNumber": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "corporateDocPdf": {
+                "type": "component"
+              },
+              "federalCertificatePdf": {
+                "type": "component"
+              },
+              "municipalCertificatePdf": {
+                "type": "component"
+              },
+              "stateCertificatePdf": {
+                "type": "component"
+              },
+              "fgtsCertificatePdf": {
+                "type": "component"
+              },
+              "laborCertificatePdf": {
+                "type": "component"
+              },
+              "address": {
+                "type": "component"
+              },
+              "declaration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -8020,6 +8110,9 @@
         "properties": {
           "status": {
             "type": "boolean"
+          },
+          "vendor": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -8598,6 +8691,55 @@
                 "type": "string"
               }
             }
+          },
+          "declaration": {
+            "required": [
+              "id",
+              "file",
+              "expirationDate"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              },
+              "expirationDate": {
+                "type": "string"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "status": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "status": {
+                "type": "boolean"
+              },
+              "vendor": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -9169,6 +9311,12 @@
                 "type": "string"
               }
             }
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

@@ -85,6 +85,14 @@
       "repeatable": false,
       "component": "info.address",
       "required": false
+    },
+    "declaration": {
+      "via": "vendor",
+      "model": "vendor-declaration"
+    },
+    "status": {
+      "via": "vendor",
+      "model": "vendor-status"
     }
   }
 }

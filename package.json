@@ -16,6 +16,7 @@
     "commit": "cz"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.15.4",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "babel-eslint": "^10.1.0",
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
@@ -47,6 +49,7 @@
     "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-documentation": "3.6.8",
     "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-graphql": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",

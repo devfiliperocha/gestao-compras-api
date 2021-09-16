@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "vendor_status",
   "info": {
-    "name": "Fornecedores Status",
+    "name": "Status Fornecedores",
     "description": ""
   },
   "options": {
@@ -10,10 +10,18 @@
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    }
+  },
   "attributes": {
     "status": {
       "type": "boolean"
+    },
+    "vendor": {
+      "model": "vendor",
+      "via": "status"
     }
   }
 }

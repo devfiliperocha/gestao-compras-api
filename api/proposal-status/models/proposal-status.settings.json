@@ -2,14 +2,18 @@
   "kind": "collectionType",
   "collectionName": "proposal_status",
   "info": {
-    "name": "Propostas Status"
+    "name": "Status Propostas"
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "content-manager":{
+      "visible": false
+    }
+  },
   "attributes": {
     "proposal": {
       "model": "proposal",
