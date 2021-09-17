@@ -1,6 +1,7 @@
 const jpColors = {
   'primary': '#204372',
   'mediumPrimary': '#778da3',
+  'blackPrimary': '#050c1c',
   'darkPrimary': '#0C1D4A',
   'lightPrimary': '#b8c1cb',
   'secondary': '#3E98C7',
