@@ -6,7 +6,7 @@
 
 import React from 'react';
 import Wrapper from './Wrapper';
-import LogoJP from '../../../assets/images/logo-dark.png';
+import LogoJP from '../../../assets/images/logo-light.png';
 import Img from './Img';
 
 function LeftMenuFooter() {
