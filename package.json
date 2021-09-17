@@ -5,8 +5,9 @@
   "description": "Backend Projeto JP Gestão de COmpras",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "NODE_ENV=production strapi start",
     "build": "strapi build",
+    "build:production": "NODE_ENV=production strapi build",
     "strapi": "strapi",
     "lint": "eslint . --max-warnings=100",
     "test": "jest --forceExit --detectOpenHandles",
