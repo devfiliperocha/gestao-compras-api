@@ -12,4 +12,5 @@ yarn.lock
 .prettierignore
 .prettierrc.yml
 TODO
+favicon.ico
 
