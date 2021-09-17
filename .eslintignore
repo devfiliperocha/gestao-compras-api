@@ -1,5 +1,6 @@
 .cache
 build
+admin
 **/node_modules/**
 **/*.json
 **/*.html
