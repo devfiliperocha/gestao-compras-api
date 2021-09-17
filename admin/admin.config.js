@@ -6,6 +6,7 @@ module.exports = {
         CUSTOM_VARIABLES: {
           ORGAN_NAME: JSON.stringify(process.env.ORGAN_NAME),
           DATABASE_CLIENT: JSON.stringify(process.env.DATABASE_CLIENT),
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         },
       }),
     );
