@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const LinksContainer = styled.div`
   padding-top: 0.7rem;
-  background-color: ${(props) => props.theme.main.colors.darkprimary};
+  background-color: ${(props) => props.theme.main.colors.darkPrimary};
   position: absolute;
   top: ${(props) => props.theme.main.sizes.leftMenu.height};
   right: 0;

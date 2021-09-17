@@ -56,8 +56,9 @@ const colors = {
     'background-alpha': 'rgba(14, 22, 34, 0.02)',
   },
   'leftMenu': {
-    'link-hover': '#1c2431',
-    'link-color': '#919bae',
+    'link-hover': jpColors.primary,
+    'link-active': jpColors.accent,
+    'link-color': '#ffffff',
     'title-color': '#5b626f',
     'background-header-link': jpColors.primary,
   },
