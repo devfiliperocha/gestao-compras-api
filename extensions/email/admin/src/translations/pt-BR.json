@@ -1,0 +1,22 @@
+{
+  "plugin.description.long": "Enviar emails.",
+  "plugin.description.short": "Enviar emails.",
+  "SettingsNav.section-label": "Plug-in de e-mail",
+  "SettingsNav.link.settings": "Configurações de e-mail",
+  "Settings.title": "Configurações de e-mail",
+  "Settings.subTitle": "Teste as configurações do plugin de e-mail",
+  "Settings.button.test-email": "Email de teste",
+  "Settings.notification.test.success": "Teste de e-mail bem-sucedido, verifique a caixa de correio {to}",
+  "Settings.notification.test.error": "Falha ao enviar um e-mail de teste para {to}",
+  "Settings.notification.config.error": "Falha ao recuperar a configuração do e-mail",
+  "Settings.form.title.config": "Configuração",
+  "Settings.form.title.test": "Envie um e-mail de teste",
+  "Settings.form.label.provider": "Provedor de e-mail",
+  "Settings.form.label.defaultFrom": "Email do remetente padrão",
+  "Settings.form.label.defaultReplyTo": "Email de resposta padrão",
+  "Settings.form.label.testAddress": "Testar endereço de e-mail de entrega",
+  "Settings.form.placeholder.defaultFrom": "ex: Strapi No-Reply <no-reply@strapi.io>",
+  "Settings.form.placeholder.defaultReplyTo": "ex: Strapi <example@strapi.io>",
+  "Settings.form.placeholder.testAddress": "ex: developer@example.com",
+  "Settings.form.text.configuration": "O plug-in é configurado por meio do arquivo {file}, verifique este {link} para obter a documentação."
+}
