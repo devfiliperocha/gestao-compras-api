@@ -593,12 +593,7 @@
           "corporateDocNumber",
           "responsible",
           "responsibleDocNumber",
-          "corporateDocPdf",
-          "federalCertificatePdf",
-          "municipalCertificatePdf",
-          "stateCertificatePdf",
-          "fgtsCertificatePdf",
-          "laborCertificatePdf"
+          "status"
         ],
         "properties": {
           "id": {
@@ -629,7 +624,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -705,6 +702,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -712,7 +735,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -788,6 +813,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -795,7 +846,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -871,6 +924,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -878,7 +957,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -954,6 +1035,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -961,7 +1068,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1037,6 +1146,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1044,7 +1179,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1120,6 +1257,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1156,51 +1319,139 @@
             }
           },
           "declaration": {
+            "type": "object",
             "required": [
               "id",
               "file",
-              "expirationDate"
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "file": {
-                "type": "string"
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
               },
               "expirationDate": {
-                "type": "string"
+                "type": "string",
+                "format": "date"
               },
-              "vendor": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
           "status": {
+            "type": "object",
             "required": [
-              "id"
+              "id",
+              "text",
+              "type"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "status": {
-                "type": "boolean"
+              "text": {
+                "type": "string",
+                "default": "Aguardando Aprovação"
               },
-              "vendor": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+              "type": {
+                "type": "string",
+                "default": "warning",
+                "enum": [
+                  "warning",
+                  "error",
+                  "success"
+                ]
               }
             }
           }
@@ -1213,12 +1464,7 @@
           "corporateDocNumber",
           "responsible",
           "responsibleDocNumber",
-          "corporateDocPdf",
-          "federalCertificatePdf",
-          "municipalCertificatePdf",
-          "stateCertificatePdf",
-          "fgtsCertificatePdf",
-          "laborCertificatePdf"
+          "status"
         ],
         "properties": {
           "corporateName": {
@@ -1249,7 +1495,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1325,6 +1573,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1332,7 +1606,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1408,6 +1684,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1415,7 +1717,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1491,6 +1795,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1498,7 +1828,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1574,6 +1906,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1581,7 +1939,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1657,6 +2017,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1664,7 +2050,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -1740,6 +2128,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1776,10 +2190,141 @@
             }
           },
           "declaration": {
-            "type": "string"
+            "type": "object",
+            "required": [
+              "id",
+              "file",
+              "expirationDate",
+              "status"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
+              }
+            }
           },
           "status": {
-            "type": "string"
+            "type": "object",
+            "required": [
+              "id",
+              "text",
+              "type"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string",
+                "default": "Aguardando Aprovação"
+              },
+              "type": {
+                "type": "string",
+                "default": "warning",
+                "enum": [
+                  "warning",
+                  "error",
+                  "success"
+                ]
+              }
+            }
           },
           "created_by": {
             "type": "string"

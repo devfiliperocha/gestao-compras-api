@@ -48,37 +48,37 @@
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "federalCertificatePdf": {
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "municipalCertificatePdf": {
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "stateCertificatePdf": {
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "fgtsCertificatePdf": {
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "laborCertificatePdf": {
       "type": "component",
       "repeatable": false,
       "component": "documents.default",
-      "required": true
+      "required": false
     },
     "address": {
       "type": "component",
@@ -87,12 +87,15 @@
       "required": false
     },
     "declaration": {
-      "via": "vendor",
-      "model": "vendor-declaration"
+      "type": "component",
+      "repeatable": false,
+      "component": "documents.default"
     },
     "status": {
-      "via": "vendor",
-      "model": "vendor-status"
+      "type": "component",
+      "repeatable": false,
+      "component": "info.status",
+      "required": true
     }
   }
 }

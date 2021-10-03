@@ -565,12 +565,7 @@
               "corporateDocNumber",
               "responsible",
               "responsibleDocNumber",
-              "corporateDocPdf",
-              "federalCertificatePdf",
-              "municipalCertificatePdf",
-              "stateCertificatePdf",
-              "fgtsCertificatePdf",
-              "laborCertificatePdf"
+              "status"
             ],
             "properties": {
               "id": {
@@ -622,10 +617,10 @@
                 "type": "component"
               },
               "declaration": {
-                "type": "string"
+                "type": "component"
               },
               "status": {
-                "type": "string"
+                "type": "component"
               },
               "created_by": {
                 "type": "string"

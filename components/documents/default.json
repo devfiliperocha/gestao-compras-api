@@ -18,7 +18,14 @@
       "pluginOptions": {}
     },
     "expirationDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.status",
+      "required": true
     }
   }
 }

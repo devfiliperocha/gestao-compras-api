@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_info_status_fornecedors",
+  "info": {
+    "name": "StatusFornecedor",
+    "icon": "hourglass-start"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "default": "Aguardando Aprovação"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "warning",
+        "error",
+        "success"
+      ]
+    }
+  }
+}

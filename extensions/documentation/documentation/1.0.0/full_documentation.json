@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/17/2021 11:11:03 AM"
+    "x-generation-date": "10/02/2021 5:25:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3137,1054 +3137,6 @@
         ]
       }
     },
-    "/vendor-declaration": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the vendor-declaration's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-declaration document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new vendor-declaration record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-declaration document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewVendor-declaration"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/vendor-declaration/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the number of vendor-declaration documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-declaration document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "parameters": []
-      }
-    },
-    "/vendor-declaration/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one vendor-declaration record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-declaration document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single vendor-declaration record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-declaration document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewVendor-declaration"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single vendor-declaration record",
-        "responses": {
-          "200": {
-            "description": "deletes a single vendor-declaration based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-declaration"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/vendor-status": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the vendor-status's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-status document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new vendor-status record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-status document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewVendor-status"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/vendor-status/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the number of vendor-status documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-status document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "parameters": []
-      }
-    },
-    "/vendor-status/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one vendor-status record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-status document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single vendor-status record",
-        "responses": {
-          "200": {
-            "description": "Retrieve vendor-status document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewVendor-status"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single vendor-status record",
-        "responses": {
-          "200": {
-            "description": "deletes a single vendor-status based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Vendor-status"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/vendor": {
       "get": {
         "deprecated": false,
@@ -7277,12 +6229,7 @@
               "corporateDocNumber",
               "responsible",
               "responsibleDocNumber",
-              "corporateDocPdf",
-              "federalCertificatePdf",
-              "municipalCertificatePdf",
-              "stateCertificatePdf",
-              "fgtsCertificatePdf",
-              "laborCertificatePdf"
+              "status"
             ],
             "properties": {
               "id": {
@@ -7334,10 +6281,10 @@
                 "type": "component"
               },
               "declaration": {
-                "type": "string"
+                "type": "component"
               },
               "status": {
-                "type": "string"
+                "type": "component"
               },
               "created_by": {
                 "type": "string"
@@ -7834,294 +6781,6 @@
           }
         }
       },
-      "Vendor-declaration": {
-        "required": [
-          "id",
-          "file",
-          "expirationDate"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "file": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "expirationDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "vendor": {
-            "required": [
-              "id",
-              "corporateName",
-              "fantasyName",
-              "corporateDocNumber",
-              "responsible",
-              "responsibleDocNumber",
-              "corporateDocPdf",
-              "federalCertificatePdf",
-              "municipalCertificatePdf",
-              "stateCertificatePdf",
-              "fgtsCertificatePdf",
-              "laborCertificatePdf"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "corporateName": {
-                "type": "string"
-              },
-              "fantasyName": {
-                "type": "string"
-              },
-              "corporateDocNumber": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "phone": {
-                "type": "string"
-              },
-              "responsible": {
-                "type": "string"
-              },
-              "responsibleDocNumber": {
-                "type": "string"
-              },
-              "user": {
-                "type": "string"
-              },
-              "corporateDocPdf": {
-                "type": "component"
-              },
-              "federalCertificatePdf": {
-                "type": "component"
-              },
-              "municipalCertificatePdf": {
-                "type": "component"
-              },
-              "stateCertificatePdf": {
-                "type": "component"
-              },
-              "fgtsCertificatePdf": {
-                "type": "component"
-              },
-              "laborCertificatePdf": {
-                "type": "component"
-              },
-              "address": {
-                "type": "component"
-              },
-              "declaration": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      "NewVendor-declaration": {
-        "required": [
-          "expirationDate"
-        ],
-        "properties": {
-          "expirationDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "vendor": {
-            "type": "string"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Vendor-status": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "status": {
-            "type": "boolean"
-          },
-          "vendor": {
-            "required": [
-              "id",
-              "corporateName",
-              "fantasyName",
-              "corporateDocNumber",
-              "responsible",
-              "responsibleDocNumber",
-              "corporateDocPdf",
-              "federalCertificatePdf",
-              "municipalCertificatePdf",
-              "stateCertificatePdf",
-              "fgtsCertificatePdf",
-              "laborCertificatePdf"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "corporateName": {
-                "type": "string"
-              },
-              "fantasyName": {
-                "type": "string"
-              },
-              "corporateDocNumber": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "phone": {
-                "type": "string"
-              },
-              "responsible": {
-                "type": "string"
-              },
-              "responsibleDocNumber": {
-                "type": "string"
-              },
-              "user": {
-                "type": "string"
-              },
-              "corporateDocPdf": {
-                "type": "component"
-              },
-              "federalCertificatePdf": {
-                "type": "component"
-              },
-              "municipalCertificatePdf": {
-                "type": "component"
-              },
-              "stateCertificatePdf": {
-                "type": "component"
-              },
-              "fgtsCertificatePdf": {
-                "type": "component"
-              },
-              "laborCertificatePdf": {
-                "type": "component"
-              },
-              "address": {
-                "type": "component"
-              },
-              "declaration": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      "NewVendor-status": {
-        "properties": {
-          "status": {
-            "type": "boolean"
-          },
-          "vendor": {
-            "type": "string"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
       "Vendor": {
         "required": [
           "id",
@@ -8130,12 +6789,7 @@
           "corporateDocNumber",
           "responsible",
           "responsibleDocNumber",
-          "corporateDocPdf",
-          "federalCertificatePdf",
-          "municipalCertificatePdf",
-          "stateCertificatePdf",
-          "fgtsCertificatePdf",
-          "laborCertificatePdf"
+          "status"
         ],
         "properties": {
           "id": {
@@ -8166,7 +6820,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8242,6 +6898,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8249,7 +6931,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8325,6 +7009,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8332,7 +7042,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8408,6 +7120,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8415,7 +7153,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8491,6 +7231,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8498,7 +7264,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8574,6 +7342,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8581,7 +7375,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8657,6 +7453,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8693,51 +7515,139 @@
             }
           },
           "declaration": {
+            "type": "object",
             "required": [
               "id",
               "file",
-              "expirationDate"
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "file": {
-                "type": "string"
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
               },
               "expirationDate": {
-                "type": "string"
+                "type": "string",
+                "format": "date"
               },
-              "vendor": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
           "status": {
+            "type": "object",
             "required": [
-              "id"
+              "id",
+              "text",
+              "type"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "status": {
-                "type": "boolean"
+              "text": {
+                "type": "string",
+                "default": "Aguardando Aprovação"
               },
-              "vendor": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+              "type": {
+                "type": "string",
+                "default": "warning",
+                "enum": [
+                  "warning",
+                  "error",
+                  "success"
+                ]
               }
             }
           }
@@ -8750,12 +7660,7 @@
           "corporateDocNumber",
           "responsible",
           "responsibleDocNumber",
-          "corporateDocPdf",
-          "federalCertificatePdf",
-          "municipalCertificatePdf",
-          "stateCertificatePdf",
-          "fgtsCertificatePdf",
-          "laborCertificatePdf"
+          "status"
         ],
         "properties": {
           "corporateName": {
@@ -8786,7 +7691,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8862,6 +7769,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8869,7 +7802,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -8945,6 +7880,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -8952,7 +7913,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -9028,6 +7991,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -9035,7 +8024,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -9111,6 +8102,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -9118,7 +8135,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -9194,6 +8213,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -9201,7 +8246,9 @@
             "type": "object",
             "required": [
               "id",
-              "file"
+              "file",
+              "expirationDate",
+              "status"
             ],
             "properties": {
               "id": {
@@ -9277,6 +8324,32 @@
               "expirationDate": {
                 "type": "string",
                 "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
               }
             }
           },
@@ -9313,10 +8386,141 @@
             }
           },
           "declaration": {
-            "type": "string"
+            "type": "object",
+            "required": [
+              "id",
+              "file",
+              "expirationDate",
+              "status"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "required": [
+                  "id",
+                  "name",
+                  "hash",
+                  "mime",
+                  "size",
+                  "url",
+                  "provider"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "alternativeText": {
+                    "type": "string"
+                  },
+                  "caption": {
+                    "type": "string"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "formats": {
+                    "type": "object"
+                  },
+                  "hash": {
+                    "type": "string"
+                  },
+                  "ext": {
+                    "type": "string"
+                  },
+                  "mime": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "number"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "previewUrl": {
+                    "type": "string"
+                  },
+                  "provider": {
+                    "type": "string"
+                  },
+                  "provider_metadata": {
+                    "type": "object"
+                  },
+                  "related": {
+                    "type": "string"
+                  },
+                  "created_by": {
+                    "type": "string"
+                  },
+                  "updated_by": {
+                    "type": "string"
+                  }
+                }
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "status": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "text",
+                  "type"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Aguardando Aprovação"
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": "warning",
+                    "enum": [
+                      "warning",
+                      "error",
+                      "success"
+                    ]
+                  }
+                }
+              }
+            }
           },
           "status": {
-            "type": "string"
+            "type": "object",
+            "required": [
+              "id",
+              "text",
+              "type"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string",
+                "default": "Aguardando Aprovação"
+              },
+              "type": {
+                "type": "string",
+                "default": "warning",
+                "enum": [
+                  "warning",
+                  "error",
+                  "success"
+                ]
+              }
+            }
           },
           "created_by": {
             "type": "string"
