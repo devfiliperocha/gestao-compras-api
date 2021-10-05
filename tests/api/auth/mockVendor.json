@@ -1,20 +1,32 @@
 {
+  "id": 3,
   "corporateName": "Retífica Belo Horizonte LTDA",
   "fantasyName": "Oficina do Zé",
   "corporateDocNumber": "1234123123123",
-  "address": { "address": "Rua dos Josés, 123" },
+  "email": null,
   "phone": "1234",
   "responsible": "Zezinho",
   "responsibleDocNumber": "123423123123",
-  "corporateDocPdf": {},
-  "federalCertificatePdf": {},
-  "stateCertificatePdf": {},
-  "municipalCertificatePdf": {},
-  "fgtsCertificatePdf": {},
-  "laborCertificatePdf": {},
-  "user": {
-    "username": "vendor",
-    "email": "jose@antonio.com",
-    "password": "1234abc"
+  "status": {
+      "id": 3,
+      "text": "Aguardando Aprovação",
+      "type": "warning"
+  },
+  "declaracao": null,
+  "declaration": null,
+  "corporateDocPdf": null,
+  "federalCertificatePdf": null,
+  "municipalCertificatePdf": null,
+  "stateCertificatePdf": null,
+  "fgtsCertificatePdf": null,
+  "laborCertificatePdf": null,
+  "address": {
+      "id": 3,
+      "address": "Rua dos Josés, 123",
+      "number": "S/N",
+      "CEP": null,
+      "district": null,
+      "city": null,
+      "state": null
   }
 }
