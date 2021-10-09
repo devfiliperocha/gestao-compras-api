@@ -1,5 +1,8 @@
 'use strict';
+const Yup = require('yup');
+const { ptForm } = require('yup-locale-pt');
 
+Yup.setLocale(ptForm);
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.

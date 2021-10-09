@@ -14,11 +14,14 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "minLength": 5
     },
     "corporateDocNumber": {
       "type": "string",
-      "required": true
+      "required": true,
+      "minLength": 14,
+      "maxLength": 18
     },
     "address": {
       "type": "component",
@@ -28,11 +31,13 @@
     },
     "secretariat": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": false
     },
     "autarchy": {
       "type": "boolean",
-      "required": true
+      "required": true,
+      "default": false
     }
   }
 }

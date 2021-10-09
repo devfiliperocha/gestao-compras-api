@@ -528,28 +528,35 @@
             "type": "string"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 5
           },
           "corporateDocNumber": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 18,
+            "minLength": 14
           },
           "address": {
             "type": "object",
             "required": [
               "id",
               "address",
-              "number"
+              "number",
+              "city",
+              "state"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "address": {
-                "type": "string"
+                "type": "string",
+                "minLength": 5
               },
               "number": {
                 "type": "string",
-                "default": "S/N"
+                "default": "S/N",
+                "minLength": 1
               },
               "CEP": {
                 "type": "string"
@@ -558,18 +565,22 @@
                 "type": "string"
               },
               "city": {
-                "type": "string"
+                "type": "string",
+                "minLength": 5
               },
               "state": {
-                "type": "string"
+                "type": "string",
+                "minLength": 2
               }
             }
           },
           "secretariat": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "autarchy": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -583,28 +594,35 @@
         ],
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 5
           },
           "corporateDocNumber": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 18,
+            "minLength": 14
           },
           "address": {
             "type": "object",
             "required": [
               "id",
               "address",
-              "number"
+              "number",
+              "city",
+              "state"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "address": {
-                "type": "string"
+                "type": "string",
+                "minLength": 5
               },
               "number": {
                 "type": "string",
-                "default": "S/N"
+                "default": "S/N",
+                "minLength": 1
               },
               "CEP": {
                 "type": "string"
@@ -613,18 +631,22 @@
                 "type": "string"
               },
               "city": {
-                "type": "string"
+                "type": "string",
+                "minLength": 5
               },
               "state": {
-                "type": "string"
+                "type": "string",
+                "minLength": 2
               }
             }
           },
           "secretariat": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "autarchy": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

@@ -56,7 +56,8 @@
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
     "strapi-provider-email-sendgrid": "^3.6.8",
-    "strapi-utils": "3.6.8"
+    "strapi-utils": "3.6.8",
+    "yup-locale-pt": "^0.0.8"
   },
   "lint-staged": {
     "*": [

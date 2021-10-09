@@ -2,18 +2,22 @@
   "collectionName": "components_info_addresses",
   "info": {
     "name": "address",
-    "icon": "map-pin"
+    "icon": "map-pin",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "address": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": false,
+      "minLength": 5
     },
     "number": {
       "type": "string",
       "required": true,
-      "default": "S/N"
+      "default": "S/N",
+      "minLength": 1
     },
     "CEP": {
       "type": "string"
@@ -22,10 +26,14 @@
       "type": "string"
     },
     "city": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "minLength": 5
     },
     "state": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "minLength": 2
     }
   }
 }
