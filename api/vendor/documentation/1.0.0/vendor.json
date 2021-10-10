@@ -1291,9 +1291,7 @@
             "required": [
               "id",
               "address",
-              "number",
-              "city",
-              "state"
+              "number"
             ],
             "properties": {
               "id": {
@@ -2168,9 +2166,7 @@
             "required": [
               "id",
               "address",
-              "number",
-              "city",
-              "state"
+              "number"
             ],
             "properties": {
               "id": {

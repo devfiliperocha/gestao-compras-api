@@ -27,12 +27,10 @@
     },
     "city": {
       "type": "string",
-      "required": true,
       "minLength": 5
     },
     "state": {
       "type": "string",
-      "required": true,
       "minLength": 2
     }
   }
